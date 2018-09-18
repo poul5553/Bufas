@@ -1,6 +1,6 @@
-@import 'fontsetup';
-@import 'colorsetup';
-@import 'mixin';
+@import 'base/fontsetup';
+@import 'base/colorsetup';
+@import 'abstracts/mixins';
 
 html {
     scroll-behavior: smooth;

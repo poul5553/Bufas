@@ -1,1 +1,400 @@
+/* line 5, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+html {
+  scroll-behavior: smooth;
+}
 
+/* line 9, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+body {
+  background: url(//assets.ubuntu.com/sites/ubuntu/latest/u/img/backgrounds/image-background-paper.png) repeat-y center top;
+  color: #333333;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 19, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+h1 {
+  font-size: calc(16px * 2.0);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+/* line 24, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+h2 {
+  font-size: calc(16px * 2.0);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+/* line 29, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 32, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.nav-menu {
+  background-color: #E95420;
+  padding: 1vmin 0;
+  margin: 1vmin 0;
+}
+
+/* line 121, C:/Users/poul5553/Opgaver/Bufas/resources/sass/abstracts/_mixins.scss */
+.nav-menu .nav-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  background-color: inherit;
+}
+
+/* line 47, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.nav-menu ul {
+  text-align: left;
+}
+
+/* line 50, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.nav-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 2vw;
+}
+
+/* line 54, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.nav-menu ul li a {
+  color: #FFFFFF;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: calc(16px * 2.0);
+}
+
+/* line 60, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.nav-menu ul li a:hover {
+  background-color: #ff6526;
+}
+
+/* line 63, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.nav-menu ul li a:active {
+  background-color: #ba431a;
+}
+
+/* line 66, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.nav-menu ul li a:focus {
+  background-color: #a33b16;
+}
+
+/* line 72, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.nav-menu .menu-item {
+  grid-column: span 12;
+  width: 100vw;
+  margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 72, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+  .nav-menu .menu-item {
+    /* DESKTOP MQ */
+    width: 1024px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 72, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+  .nav-menu .menu-item {
+    /* TABLET MQ */
+    width: 768px;
+  }
+}
+
+/* line 86, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.btn {
+  cursor: pointer;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+/* line 92, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.active {
+  background-color: #ba431a;
+}
+
+/* line 96, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+img {
+  width: 100%;
+}
+
+/* line 99, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.main-wrapper {
+  width: 100vw;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 99, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+  .main-wrapper {
+    /* TABLET MQ */
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 99, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+  .main-wrapper {
+    /* DESKTOP MQ */
+    width: 1024px;
+  }
+}
+
+/* line 121, C:/Users/poul5553/Opgaver/Bufas/resources/sass/abstracts/_mixins.scss */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  background-color: #FFFFFF;
+}
+
+/* line 119, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.place-item {
+  grid-column: span 12;
+  padding-left: 2vmin;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 119, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+  .place-item {
+    /* TABLET MQ */
+    grid-column: span 6;
+  }
+}
+
+/* line 152, C:/Users/poul5553/Opgaver/Bufas/resources/sass/abstracts/_mixins.scss */
+.klaes {
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #E95420;
+  box-sizing: border-box;
+}
+
+/* line 140, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.tilmeld-button {
+  background-color: #E95420;
+  color: #FFFFFF;
+  font-size: 16px;
+  -webkit-box-shadow: 0.4vmin 0.7vmin #AEA79F;
+  -moz-box-shadow: 0.4vmin 0.7vmin #AEA79F;
+  box-shadow: 0.4vmin 0.7vmin #AEA79F;
+  padding: 2vmin;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 3vmin;
+}
+
+/* line 149, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.tilmeld-button :hover {
+  cursor: pointer;
+  background-color: #ff6526;
+}
+
+/* line 154, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.tilmeld-button a:hover {
+  background-color: #ff6526;
+}
+
+/* line 157, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.tilmeld-button :active {
+  transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+  -moz-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  -o-transform: scale(0.8, 0.8);
+}
+
+/* line 162, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.section-border {
+  border-bottom-style: solid;
+  border-bottom-color: #AEA79F;
+  padding-top: 2vmin;
+  padding-bottom: 2vmin;
+}
+
+/* line 170, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.news-header {
+  grid-column: span 12;
+  padding: 2vmin 1vmin 2vmin 1vmin;
+  color: #FFFFFF;
+  background-color: #E95420;
+}
+
+/* line 176, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.news-item {
+  grid-column: span 6;
+  padding-left: 1vmin;
+  background-color: #E95420;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 176, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+  .news-item {
+    /* TABLET MQ */
+    grid-column: span 3;
+  }
+}
+
+/* line 189, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.color-1 {
+  background-color: #e95420;
+  color: #FFFFFF;
+}
+
+/* line 189, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.color-2 {
+  background-color: #eb6536;
+  color: #FFFFFF;
+}
+
+/* line 189, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.color-3 {
+  background-color: #ed764d;
+  color: #FFFFFF;
+}
+
+/* line 189, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.color-4 {
+  background-color: #f08763;
+  color: #FFFFFF;
+}
+
+/* line 189, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.color-5 {
+  background-color: #f29879;
+  color: #FFFFFF;
+}
+
+/* line 189, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.color-6 {
+  background-color: #f4aa90;
+  color: #111111;
+}
+
+/* line 189, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.color-7 {
+  background-color: #f5b29b;
+  color: #111111;
+}
+
+/* line 189, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.color-8 {
+  background-color: #f6bba6;
+  color: #111111;
+}
+
+/* line 199, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.interest-item {
+  grid-column: span 12;
+  padding-left: 1vmin;
+  background-color: #AEA79F;
+  color: #FFFFFF;
+}
+
+/* line 207, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+fieldset {
+  border: none;
+}
+
+/* .formcontact legend {
+    color: var(--colorBorder); 
+} */
+/* line 214, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.formcontact span {
+  /* width: 20vmin; */
+  display: inline-block;
+}
+
+/* line 218, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.labelEna {
+  /* width: 20vmin;  */
+  display: inline-block;
+}
+
+/* line 222, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.labelDis {
+  display: none;
+}
+
+/* line 225, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.interest-button {
+  background-color: #E95420;
+  color: #FFFFFF;
+  font-size: 16px;
+  -webkit-box-shadow: 0.4vmin 0.7vmin #000000;
+  -moz-box-shadow: 0.4vmin 0.7vmin #000000;
+  box-shadow: 0.4vmin 0.7vmin #000000;
+  padding: 1vmin;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 3vmin;
+}
+
+/* line 234, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.interest-button :hover {
+  cursor: pointer;
+}
+
+/* line 237, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.interest-button :active {
+  transform: scale(0.7, 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+  -moz-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  -o-transform: scale(0.7, 0.7);
+}
+
+/* line 242, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.subject-header {
+  grid-column: span 12;
+  padding: 2vmin 1vmin 2vmin 1vmin;
+  color: #111111;
+  background-color: #FFFFFF;
+}
+
+/* line 248, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.subject-item {
+  grid-column: span 6;
+  padding-left: 1vmin;
+  background-color: #FFFFFF;
+  color: #77216F;
+}
+
+/* line 254, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.subject-item a {
+  color: #77216F;
+}
+
+/* line 161, C:/Users/poul5553/Opgaver/Bufas/resources/sass/abstracts/_mixins.scss */
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 259, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.subject-box {
+  width: 30vmin;
+  height: 30vmin;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0;
+  border-color: #E95420;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 280, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.footer-item {
+  grid-column: span 12;
+}
+
+/*# sourceMappingURL=../css/main.map */

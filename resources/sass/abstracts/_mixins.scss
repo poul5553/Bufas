@@ -112,7 +112,7 @@ $grid-background-color: inherit !default;
       grid-template-rows: $grid-template-rows
     }
 
-    background-color: $grid-background-color;
+    background: $grid-background-color;
 
     @content;
   }

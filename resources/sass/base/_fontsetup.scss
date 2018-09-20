@@ -9,24 +9,17 @@ $font-weight-bold: 700;
 // Calculation of font-size-norm is inspired by calcultor: https://websemantics.uk/tools/responsive-font-calculator/
 // Calculation of font-size for h1, h2, h3, h4, h5, h6 is found on w3schools: https://www.w3schools.com/TAGS/tag_hn.asp
 // Font size for navigation is due to customer specification
-
-$font-size-base: 1; 
-$screen-size-min: 320;
-$screen-size-max: 1540;
-
-/* 1em(16px) @ 30em(480px) increasing to 2em(32px) @ 120em(1920px) */
-@media (min-width: 30em) {
-    :root {
-      $ont-size: calc(1rem + ((1vw - 0.3em) * 1.1111));
-      /* Where: * 1.1111 = 100 * font_Size_Difference / viewport_Width_Difference */
-    }
-  }
+// All units are in em (1em = 16 px)
+$font-size-base: 16; 
+$screen-size-min: 320; 
+$screen-size-max: 1536;
 
 $font-size-min: #{$font-size-base * 0.75};
 $font-size-max: #{$font-size-base * 2.0};
-
-$font-size-norm: #{$font-size-min}em + (1vw + 0.3em) * (100 * #{$font-size-max} - #{$font-size-min} / #{$screen-size-max} - #{$screen-size-min}); 
-
+$font-size-px: $font-size-min+'px';
+$font-size-aa: calc(1vw - (0.3 * #{$font-size-px})); 
+$font-size-bb: calc(100 * (#{$font-size-max} - #{$font-size-min}) / (#{$screen-size-max} - #{$screen-size-min}));
+$font-size-norm: calc((#{$font-size-px} + ((#{$font-size-aa}) * #{$font-size-bb}))); 
 
 $font-size-h1: calc(#{$font-size-norm} * 2.0); 
 $font-size-h2: calc(#{$font-size-norm} * 1.5); 

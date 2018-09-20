@@ -16,11 +16,15 @@ $color-border-nav: #ffa500;
 
 // color-back er kun synlig mellem afsnit på siden (margin)
 $color-back: #fff; 
+// color-fonts 
 $color-font-norm: #fff; 
 $color-font-head: #fff; 
 
-$default-border-color: $color-border-img; 
-$nav-color-back: linear-gradient (to bottom, #{$color-back-boy} 0%, #{$color-back-boy} 50%, #{$color-back-girl} 50%, #{$color-back-girl} 100%);
-$nav-color-back: linear-gradient (to bottom, $color-back-boy 0%, $color-back-boy 50%, $color-back-girl 50%, $color-back-girl 100%);
 
-$nav-color-back: linear-gradient(to bottom, #dae6e5 0%, #dae6e5 50% , #ddc3de 50%, #ddc3de 100%)
+$nav-color-back: linear-gradient(to bottom, $color-back-boy 0%, $color-back-boy 50%, $color-back-girl 50%, $color-back-girl 100%);
+$head-color-back: linear-gradient(to bottom, #{$color-back-boy} 0%, #{$color-back-boy} 50%, #{$color-back-girl} 50%, #{$color-back-girl} 100%);
+$main-color-back: linear-gradient(to bottom, #{$color-back-boy} 0%, #{$color-back-boy} 50%, #{$color-back-girl} 50%, #{$color-back-girl} 100%) transform rotate(-45deg);
+$footer-color-back: linear-gradient(to bottom, #{$color-back-boy} 0%, #{$color-back-boy} 50%, #{$color-back-girl} 50%, #{$color-back-girl} 100%);
+
+// Bridge til variabler i mixins 
+$default-border-color: $color-border-img;

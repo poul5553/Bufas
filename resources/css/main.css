@@ -1,146 +1,206 @@
-/* 1em(16px) @ 30em(480px) increasing to 2em(32px) @ 120em(1920px) */
-@media (min-width: 30em) {
-  /* line 19, C:/Users/poul5553/Opgaver/Bufas/resources/sass/base/_fontsetup.scss */
-  :root {
-    /* Where: * 1.1111 = 100 * font_Size_Difference / viewport_Width_Difference */
-  }
-}
-
-/* line 5, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 6, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 html {
   scroll-behavior: smooth;
 }
 
-/* line 9, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 10, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 body {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: calc((0.75em + (1vw + 0.3em) * (100 * 2em - 0.75em / 1540px - 320px)));
+  font-size: calc((12px + ((calc(1vw - (0.3 * 12px))) * calc(100 * (32 - 12) / (1536 - 320)))));
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-/* line 18, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 20, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 h1 {
-  font-size: calc(calc((0.75em + (1vw + 0.3em) * (100 * 2em - 0.75em / 1540px - 320px))) * 2.0);
-  font-family: "Patrick Hand", cursive;
+  font-size: calc(calc((12px + ((calc(1vw - (0.3 * 12px))) * calc(100 * (32 - 12) / (1536 - 320))))) * 2.0);
   font-weight: 700;
 }
 
-/* line 23, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 25, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 h2 {
-  font-size: calc(calc((0.75em + (1vw + 0.3em) * (100 * 2em - 0.75em / 1540px - 320px))) * 1.5);
-  font-family: "Patrick Hand", cursive;
+  font-size: calc(calc((12px + ((calc(1vw - (0.3 * 12px))) * calc(100 * (32 - 12) / (1536 - 320))))) * 1.5);
   font-weight: 700;
 }
 
-/* line 28, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 29, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 a {
   text-decoration: none;
 }
 
-/* line 121, C:/Users/poul5553/Opgaver/Bufas/resources/sass/abstracts/_mixins.scss */
-.nav-menu .nav-grid {
+/* line 33, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+img {
+  width: 100%;
+}
+
+/* line 1, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+.nav-menu {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   background: linear-gradient(to bottom, #dae6e5 0%, #dae6e5 50%, #ddc3de 50%, #ddc3de 100%);
 }
 
-/* line 49, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 17, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
 .nav-menu ul {
   text-align: left;
 }
 
-/* line 52, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 20, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
 .nav-menu ul li {
   list-style-type: none;
   display: inline-block;
   margin-right: 2vw;
 }
 
-/* line 56, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 24, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
 .nav-menu ul li a {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
-/* line 61, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 29, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
 .nav-menu ul li a:hover {
   background-color: inherit;
 }
 
-/* line 64, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 32, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
 .nav-menu ul li a:active {
   background-color: inherit;
 }
 
-/* line 67, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 35, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
 .nav-menu ul li a:focus {
   background-color: inherit;
 }
 
-/* line 74, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
-.nav-menu .menu-item {
-  grid-column: span 12;
-  width: 100vw;
-  margin: auto;
-}
-
-@media screen and (min-width: 1024px) {
-  /* line 74, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
-  .nav-menu .menu-item {
-    /* DESKTOP MQ */
-    width: 1024px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 74, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
-  .nav-menu .menu-item {
-    /* TABLET MQ */
-    width: 768px;
-  }
-}
-
-/* line 88, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 46, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
 .nav-btn {
   cursor: pointer;
 }
 
-/* Style the active class (and buttons on mouse-over) */
-/* line 94, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
-.active {
-  background-color: inherit;
+/* line 50, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+.nav-btn img {
+  border: 4px;
+  border-style: hidden;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
-/* line 99, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 62, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+.nav-btn img:active {
+  border-style: solid;
+  border-color: #ffa500;
+  box-sizing: border-box;
+  transform: scale(0.9);
+}
+
+/* line 72, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+.logo-item {
+  grid-column: span 3;
+  margin: auto;
+}
+
+/* line 76, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+.logo-item img {
+  width: 100%;
+  min-width: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 72, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+  .logo-item {
+    /* DESKTOP MQ */
+  }
+  /* line 84, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+  .logo-item img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 72, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+  .logo-item {
+    /* TABLET MQ */
+  }
+  /* line 90, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+  .logo-item img {
+    width: 100%;
+  }
+}
+
+/* line 97, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+.menu-item {
+  grid-column: -1 / span 9;
+  margin: auto;
+}
+
+/* line 100, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+.menu-item img {
+  padding-top: 3vmin;
+  width: 65%;
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 97, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+  .menu-item {
+    /* DESKTOP MQ */
+  }
+  /* line 108, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+  .menu-item img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 97, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+  .menu-item {
+    /* TABLET MQ */
+  }
+  /* line 114, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
+  .menu-item img {
+    width: 80%;
+  }
+}
+
+/* line 1, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_header.scss */
+.head {
+  background: linear-gradient(to bottom, #dae6e5 0%, #dae6e5 50%, #ddc3de 50%, #ddc3de 100%);
+  font-family: "Patrick Hand", cursive;
+}
+
+/* line 152, C:/Users/poul5553/Opgaver/Bufas/resources/sass/abstracts/_mixins.scss */
+nav-style {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #ffa500;
+  box-sizing: border-box;
+}
+
+/* line 58, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 .main-btn {
   cursor: pointer;
 }
 
 /* Style the active class (and buttons on mouse-over) */
-/* line 105, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 65, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 .active {
   background-color: inherit;
 }
 
-/* line 109, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
-img {
-  width: 100%;
-}
-
-/* line 112, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 73, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 .main-wrapper {
   width: 100vw;
   margin: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 112, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+  /* line 73, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
   .main-wrapper {
     /* TABLET MQ */
     width: 768px;
@@ -148,7 +208,7 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 112, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+  /* line 73, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
   .main-wrapper {
     /* DESKTOP MQ */
     width: 1024px;
@@ -163,14 +223,14 @@ img {
   background: #fff;
 }
 
-/* line 132, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 93, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 .place-item {
   grid-column: span 12;
   padding-left: 2vmin;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 132, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+  /* line 93, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
   .place-item {
     /* TABLET MQ */
     grid-column: span 6;

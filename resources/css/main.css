@@ -1,37 +1,37 @@
-/* line 6, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 7, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 html {
   scroll-behavior: smooth;
 }
 
-/* line 10, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 11, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 body {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: calc((12px + ((calc(1vw - (0.3 * 12px))) * calc(100 * (32 - 12) / (1536 - 320)))));
+  font-size: calc(calc((12px + ((calc(1vw - (0.3 * 12px))) * calc(100 * (32 - 12) / (1536 - 320))))) * 1.0);
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-/* line 20, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 22, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 h1 {
   font-size: calc(calc((12px + ((calc(1vw - (0.3 * 12px))) * calc(100 * (32 - 12) / (1536 - 320))))) * 2.0);
-  font-weight: 700;
+  font-weight: 400;
 }
 
-/* line 25, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 28, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 h2 {
   font-size: calc(calc((12px + ((calc(1vw - (0.3 * 12px))) * calc(100 * (32 - 12) / (1536 - 320))))) * 1.5);
-  font-weight: 700;
+  font-weight: 400;
 }
 
-/* line 29, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 32, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 a {
   text-decoration: none;
 }
 
-/* line 33, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 36, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 img {
   width: 100%;
 }
@@ -41,7 +41,7 @@ img {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  background: linear-gradient(to bottom, #dae6e5 0%, #dae6e5 50%, #ddc3de 50%, #ddc3de 100%);
+  background: linear-gradient(0deg, #dae6e5 0%, #dae6e5 50%, #ddc3de 50%, #ddc3de 100%);
 }
 
 /* line 17, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_navigation.scss */
@@ -169,7 +169,7 @@ img {
 
 /* line 1, C:/Users/poul5553/Opgaver/Bufas/resources/sass/layouts/_header.scss */
 .head {
-  background: linear-gradient(to bottom, #dae6e5 0%, #dae6e5 50%, #ddc3de 50%, #ddc3de 100%);
+  background: linear-gradient(0deg, #dae6e5 0%, #dae6e5 50%, #ddc3de 50%, #ddc3de 100%);
   font-family: "Patrick Hand", cursive;
 }
 
@@ -182,37 +182,21 @@ nav-style {
   box-sizing: border-box;
 }
 
-/* line 58, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 61, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 .main-btn {
   cursor: pointer;
 }
 
 /* Style the active class (and buttons on mouse-over) */
-/* line 65, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 68, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 .active {
   background-color: inherit;
 }
 
-/* line 73, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+/* line 76, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
 .main-wrapper {
   width: 100vw;
-  margin: auto;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 73, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
-  .main-wrapper {
-    /* TABLET MQ */
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  /* line 73, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
-  .main-wrapper {
-    /* DESKTOP MQ */
-    width: 1024px;
-  }
+  background: linear-gradient(-45deg, #dae6e5 0%, #dae6e5 50%, #ddc3de 50%, #ddc3de 100%);
 }
 
 /* line 121, C:/Users/poul5553/Opgaver/Bufas/resources/sass/abstracts/_mixins.scss */
@@ -220,20 +204,48 @@ nav-style {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  background: #fff;
+  background: initial;
 }
 
-/* line 93, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
-.place-item {
+/* line 97, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.main-item-img {
   grid-column: span 12;
   padding-left: 2vmin;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 93, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
-  .place-item {
+  /* line 97, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+  .main-item-img {
     /* TABLET MQ */
-    grid-column: span 6;
+    grid-column: span 3;
+  }
+}
+
+/* line 105, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.main-item-cat {
+  grid-column: span 12;
+  padding-left: 2vmin;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 105, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+  .main-item-cat {
+    /* TABLET MQ */
+    grid-column: span 7;
+  }
+}
+
+/* line 113, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+.main-item-but {
+  grid-column: span 12;
+  padding-left: 2vmin;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 113, C:/Users/poul5553/Opgaver/Bufas/resources/sass/main.scss */
+  .main-item-but {
+    /* TABLET MQ */
+    grid-column: span 2;
   }
 }
 

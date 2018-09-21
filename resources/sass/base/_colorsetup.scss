@@ -21,10 +21,10 @@ $color-font-norm: #fff;
 $color-font-head: #fff; 
 
 
-$nav-color-back: linear-gradient(to bottom, $color-back-boy 0%, $color-back-boy 50%, $color-back-girl 50%, $color-back-girl 100%);
-$head-color-back: linear-gradient(to bottom, #{$color-back-boy} 0%, #{$color-back-boy} 50%, #{$color-back-girl} 50%, #{$color-back-girl} 100%);
-$main-color-back: linear-gradient(to bottom, #{$color-back-boy} 0%, #{$color-back-boy} 50%, #{$color-back-girl} 50%, #{$color-back-girl} 100%) transform rotate(-45deg);
-$footer-color-back: linear-gradient(to bottom, #{$color-back-boy} 0%, #{$color-back-boy} 50%, #{$color-back-girl} 50%, #{$color-back-girl} 100%);
+$nav-color-back: linear-gradient(0deg, $color-back-boy 0%, $color-back-boy 50%, $color-back-girl 50%, $color-back-girl 100%);
+$head-color-back: linear-gradient(0deg, #{$color-back-boy} 0%, #{$color-back-boy} 50%, #{$color-back-girl} 50%, #{$color-back-girl} 100%);
+$main-color-back: linear-gradient(-45deg, #{$color-back-boy} 0%, #{$color-back-boy} 50%, #{$color-back-girl} 50%, #{$color-back-girl} 100%);
+$footer-color-back: linear-gradient(0deg, #{$color-back-boy} 0%, #{$color-back-boy} 50%, #{$color-back-girl} 50%, #{$color-back-girl} 100%);
 
 // Bridge til variabler i mixins 
 $default-border-color: $color-border-img;

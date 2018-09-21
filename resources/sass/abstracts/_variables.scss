@@ -2,36 +2,11 @@
 // !!Must be included after these partials
 
 
-// Fluid responsive font-size 
-// Initiate $font-size-base, $screen-size-min, $screen-size-max 
-// Calculation of font-size-norm is inspired by calcultor: https://websemantics.uk/tools/responsive-font-calculator/:
-// >> font-size: calc(16px + ((1vw - 4.8px) * x));
-//       Where: * x = 100 * font_Size_Difference / viewport_Width_Difference */
-  
-// Calculation of font-size for h1, h2, h3, h4, h5, h6 is found on w3schools: https://www.w3schools.com/TAGS/tag_hn.asp
-// Font size for navigation is due to customer specification
-// All units are in px
-// Font-size-base is the default size for font
-// screen-size-min and scrren-size-max is the scope of screen size, where font size is varying
+// Calculate responsive font-size 
+$font-select: 'norm';
 $font-size-base: 16; 
 $screen-size-min: 320; 
 $screen-size-max: 1536;
-
-$font-size-min: #{$font-size-base * 0.75};
-$font-size-max: #{$font-size-base * 2.0};
-$font-size-px: $font-size-min+'px';
-$font-size-aa: calc(1vw - (0.3 * #{$font-size-px})); 
-$font-size-bb: calc(100 * (#{$font-size-max} - #{$font-size-min}) / (#{$screen-size-max} - #{$screen-size-min}));
-$font-size-norm: calc((#{$font-size-px} + ((#{$font-size-aa}) * #{$font-size-bb}))); 
-
-$font-size-h1: calc(#{$font-size-norm} * 2.0); 
-$font-size-h2: calc(#{$font-size-norm} * 1.5); 
-$font-size-h3: calc(#{$font-size-norm} * 1.17); 
-$font-size-h4: calc(#{$font-size-norm} * 1.0); 
-$font-size-h5: calc(#{$font-size-norm} * 0.83); 
-$font-size-h6: calc(#{$font-size-norm} * 0.67); 
- 
-$font-size-nav: calc(#{$font-size-norm} * 2.0); 
 
 
 
